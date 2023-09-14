@@ -21,8 +21,9 @@ jobs:
             private_key: ${{secrets.KEY}}
             command: |
               cd ${{ secrets.PROJECT_FOLDER }};
-              git checkout main;
-              git pull;
+              touch file
+ #             git checkout main;
+ #             git pull;
 #              docker-compose --file docker-compose.prod.yml down;
 #              docker-compose --file docker-compose.prod.yml up -d;
 #              docker system prune --all --force;
