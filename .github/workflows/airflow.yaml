@@ -17,6 +17,7 @@ jobs:
             port: ${{secrets.PORT}}
             user: ${{secrets.USER}}
             private_key: ${{secrets.KEY}}
+            host_fingerprint: ${{secrets.FINGERPRINTS_KEY}}
             command: |
               cd ${{ secrets.PROJECT_FOLDER }};
               touch file.txt
