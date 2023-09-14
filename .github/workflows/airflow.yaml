@@ -18,8 +18,8 @@ jobs:
             port: ${{secrets.PORT}}
             user: ${{secrets.USER}}
             private_key: ${{secrets.KEY}}
-            command: |
-              cd ${{ secrets.PROJECT_FOLDER }};
-              touch file.txt;
-              git checkout main;
-              git pull;
+            script: |
+              cd ${{ secrets.PROJECT_FOLDER }}
+              touch file.txt
+              git checkout master
+              git pull origin master
