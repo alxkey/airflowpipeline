@@ -8,9 +8,9 @@ jobs:
   deploy:
       runs-on: ubuntu-latest
       steps:
-        - name: Checkout code
+        - name: Checkout 
           uses: actions/checkout@v3
-        - name: Run command on remote server
+        - name: Run command on remote 
           uses: D3rHase/ssh-command-action@v0.2.2
           with:
             host: ${{secrets.HOST}}
