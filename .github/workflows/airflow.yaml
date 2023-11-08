@@ -22,6 +22,4 @@ jobs:
               cd /home;
               git clone git@github.com:alxkey/airflowpipeline.git;
               cd airflowpipeline;
-              touch file.txt;
-              git checkout master;
-              git pull origin master;
+              docker-compose up -d;
