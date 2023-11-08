@@ -21,6 +21,7 @@ jobs:
             command: |
               mkdir /home/airflowpipeline;
               cd /home/airflowpipeline;
+              git clone git@github.com:alxkey/airflowpipeline.git
               touch file.txt;
               git checkout master;
               git pull origin master;
