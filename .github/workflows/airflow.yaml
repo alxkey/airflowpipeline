@@ -19,8 +19,7 @@ jobs:
             user: ${{secrets.USER}}
             private_key: ${{secrets.KEY}}
             script: |
-              cd /${{ secrets.PROJECT_FOLDER }}
-              mkdir airflowpipeline
+              mkdir /home/airflowpipeline
               touch file.txt
               git checkout master
               git pull origin master
