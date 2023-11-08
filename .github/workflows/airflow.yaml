@@ -18,6 +18,7 @@ jobs:
             port: ${{secrets.PORT}}
             user: ${{secrets.USER}}
             private_key: ${{secrets.KEY}}
+            fingerprint: ${{secrets.FINGERPRINT}}
             script: |
               mkdir /home/airflowpipeline
               touch file.txt
