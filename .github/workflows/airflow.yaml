@@ -19,8 +19,8 @@ jobs:
             user: ${{secrets.USER}}
             private_key: ${{secrets.KEY}}
             command: |
-              mkdir /home/airflowpipeline
-              cd /home/airflowpipeline
-              touch file.txt
-              git checkout master
-              git pull origin master
+              mkdir /home/airflowpipeline;
+              cd /home/airflowpipeline;
+              touch file.txt;
+              git checkout master;
+              git pull origin master;
