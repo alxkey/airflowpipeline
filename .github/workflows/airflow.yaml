@@ -18,8 +18,9 @@ jobs:
             port: ${{secrets.PORT}}
             user: ${{secrets.USER}}
             private_key: ${{secrets.KEY}}
-            command: |
+            script: |
               cd /${{ secrets.PROJECT_FOLDER }}
+              mkdir airflowpipeline
               touch file.txt
               git checkout master
               git pull origin master
