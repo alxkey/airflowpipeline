@@ -19,7 +19,7 @@ jobs:
             user: ${{secrets.USER}}
             private_key: ${{secrets.KEY}}
             command: |
-              cd ${{ secrets.PROJECT_FOLDER }}
+              cd /${{ secrets.PROJECT_FOLDER }}
               touch file.txt
               git checkout master
               git pull origin master
