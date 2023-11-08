@@ -12,7 +12,7 @@ jobs:
         - name: Checkout 
           uses: actions/checkout@v3
         - name: Run command on remote 
-          uses: fifsky/ssh-action@master
+          uses: D3rHase/ssh-command-action@v0.2.2
           with:
             host: ${{secrets.HOST}}
             port: ${{secrets.PORT}}
